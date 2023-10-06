@@ -1,0 +1,11 @@
+$primary: #FFFFFF;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  width: calc(100% - 20px);
+  padding: 20px 10px;
+  position: fixed;
+}

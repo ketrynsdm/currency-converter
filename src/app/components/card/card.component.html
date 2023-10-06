@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="card">
+    <div class="coin">
+      <h4>{{name}}</h4>
+    </div>
+    <div class="ask">
+      <h1 id="{{_rgb(currency.ask || '0')}}">R$ {{ _convert(currency.ask || '0') }}</h1>
+    </div>
+    <div class="information">
+      <div class="variation">
+        <span class="title">variação(%)</span>
+        <span class="value">{{ currency.pctChange || '' }}</span>
+      </div>
+      <div class="updated">
+        <span class="title">atualizado</span>
+        <span class="value">{{ currency.create_date || '' | date:'H:mm:s' }}</span>
+      </div>
+    </div>
+  </div>
+</div>

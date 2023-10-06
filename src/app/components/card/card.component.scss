@@ -1,0 +1,94 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #9191913b;
+  border-radius: 7px;
+  width: 305px;
+}
+
+.coin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.ask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 25px 0px;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2px;
+  gap: 2px;
+}
+
+.variation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 2px;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 0px 7px;
+}
+
+.updated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 2px;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 7px 0px;
+}
+
+.title {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #919191;
+  font-weight: 700;
+}
+
+.value {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #717171;
+  font-weight: 900;
+}
+
+h4 {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #717171;
+  font-weight: 900;
+}
+
+h1 {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #717171;
+  font-weight: 700;
+}
+
+#rgbRed {
+  color: #ff0101;
+}
+
+#rgbGreen {
+  color: green;
+}
+
+#rgbBlue {
+  color: blue;
+}
+

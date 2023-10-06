@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="container">
+
+  <ng-container *ngTemplateOutlet="loading['CADBRL'] ? cardLoading : currency['CADBRL'] ? cardCad : cardError; context: {code: 'CADBRL', name: 'Dólar Canadense'}"></ng-container>
+  <ng-container *ngTemplateOutlet="loading['ARSBRL'] ? cardLoading : currency['ARSBRL'] ? cardArs : cardError; context: {code: 'ARSBRL', name: 'Peso Argentino'}"></ng-container>
+  <ng-container *ngTemplateOutlet="loading['GBPBRL'] ? cardLoading : currency['GBPBRL'] ? cardGbp : cardError; context: {code: 'GBPBRL', name: 'Libra Esterlina'}"></ng-container>
+
+</div>
+
+<ng-template #cardCad let-code='code' let-name='name'>
+  <app-card [currency]="currency[code]" name="{{name}}"></app-card>
+</ng-template>
+
+<ng-template #cardArs let-code='code' let-name='name'>
+  <app-card [currency]="currency[code]" name="{{name}}"></app-card>
+</ng-template>
+
+<ng-template #cardGbp let-code='code' let-name='name'>
+  <app-card [currency]="currency[code]" name="{{name}}"></app-card>
+</ng-template>
+
+<ng-template #cardError let-code='code' let-name='name'>
+  <div class="multi-cards">
+    <div class="coin">
+      <h4>{{name}}</h4>
+    </div>
+    <div class="card">
+      <span class="title">Algo deu errado</span>
+      <button class="recarregar" (click)="getCurrency(code)">RECARREGAR</button>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #cardLoading let-name='name'>
+  <div class="multi-cards">
+    <div class="coin">
+      <h4>{{name}}</h4>
+    </div>
+    <div class="card">
+        <svg width='50px' height='50px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><circle cx="50" cy="50" r="40" stroke="rgba(255,255,255,0)" fill="none" stroke-width="10" stroke-linecap="round"></circle><circle cx="50" cy="50" r="40" stroke="#737c84" fill="none" stroke-width="6" stroke-linecap="round"><animate attributeName="stroke-dashoffset" dur="1.5s" repeatCount="indefinite" from="0" to="502"></animate><animate attributeName="stroke-dasharray" dur="1.5s" repeatCount="indefinite" values="188.25 62.75;1 250;188.25 62.75"></animate></circle></svg>
+    </div>
+  </div>
+</ng-template>
+
+

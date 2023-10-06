@@ -1,27 +1,33 @@
-# Currency
+# Currency Converter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+Esta aplicação tem como objetivo mostrar a conversão de três moedas para real brasilleiro (BRL)
 
-## Development server
+- Na aplicação deve mostrar a quantia equivalente de uma unidade de cada moeda abaixo em Real Brasileiro (BRL): 
+- Dólar Canadense (CAD) 
+- Peso Argentino (ARS) 
+- Libra Esterlina (GBP) 
+- Deve ser exibida a variação em porcentagem;
+- Deve ser exibida a hora da atualização; 
+- Valores menores ou igual a R$1,00 devem ser exibidos em vermelho;
+- Valores maiores que R$1,00 e menores ou igual a R$5,00 devem ser exibidos em verde; 
+- Valores maiores que R$5,00 devem ser exibidos em azul;
+- As informações devem ser atualizadas automaticamente a cada 3 minutos; 
+- O Header da aplicação deve permanecer fixo no topo, mesmo ao rolar a página;
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Como Rodar o Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
-## Build
+Realize a instalação das dependências utilizando o comendo `npm install`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Execute `ng serve` ou `npm start` para um servidor de desenvolvimento. Navegue até `http://localhost:4200`. 
 
-## Running unit tests
+## API Utilizada
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`https://docs.awesomeapi.com.br/api-de-moedas`
 
-## Running end-to-end tests
+## Design
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+O design da aplicação respeitar o mockup. Além disso, a paleta de cores também foi utilizando o mockup.
+`https://www.figma.com/file/iJJ3KTyOKrjgYmL04qF8kr/Currency-Converter?type=design&node-id=0-1&mode=design`
